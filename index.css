@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+
+.main_display_box {
+    border-radius: 0.5rem;
+    background-color: #D9D9D9;
+}
+
+.option_display_box {
+    width: 50%;
+    max-height: 450px;
+    border-radius: 0.3em;
+    /* background-color: #575757; */
+}
+
+.button_area {
+    width: 70%;
+    display: block;
+    background-color: #575757;
+    border-radius: 0.4rem;
+    height: 250px;
+    margin: auto;
+    align-content: center;
+}
+
+.title_mos_bugers {
+    font-family: "Calligraffitti", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+}
+
+.lbl_admin_panel {
+    font-family: "Klee One", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 38px;
+}
+
+.hr-1 {
+    width: 80%;
+    margin: auto;
+    height: 5px;
+    color: #1b263b;
+}
+
+.image {
+    width: 40%;
+    align-content: center;
+    justify-content: center;
+}
+
+.btn_admin,
+.btn_user {
+    width: 60%;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 21px;
+    padding: 1px 20px 1px 20px;
+    background: linear-gradient(90deg, #3B3636, #A19393 100%);
+    border: none;
+    margin: 5%;
+    border-radius: 0.7rem;
+    color: #E5E5E5;
+    transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1)
+        /* color : #E5E5E5; */
+}
+
+.btn_admin:hover,
+.btn_user:hover {
+    background: linear-gradient(90deg, #7a7272, #3B3636 100%);
+    font-size: 23px;
+}
+
+.btn_back {
+    width: 20%;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 19px;
+    padding: 1px 20px 1px 20px;
+    background: #1e1b1b;
+    border: none;
+    margin: 2%;
+    border-radius: 0.4rem;
+    color: #E5E5E5;
+}
+
+.description {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    margin-left: 5%;
+}
+
+/* //-----------------// */
+
+.admin_login_dialog_box,
+.user_login_dialog_box {
+    display: none;
+    width: 80%;
+    position: fixed;
+    top: 20%;
+    left: 10%;
+    margin: auto;
+    border-radius: 0.5rem;
+    z-index: 1;
+    background-color: #2c2c2c;
+}
+
+#itemID,
+#item_type {
+    border: none;
+    outline: none;
+}
+
+.admin_login_dialog_box label,
+.user_login_dialog_box label {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #E5E5E5;
+}
+
+.lbl_adimn_login,
+.lbl_user_login {
+    font-size: 30px;
+}
+
+.input_area {
+    width: 40%;
+    margin: auto;
+}
+
+.input_area label {
+    margin-left: 5%;
+}
+
+.input_area input {
+    width: 65%;
+    margin-left: 15%;
+    border: none;
+    outline: none;
+    margin-bottom: 5px;
+}
+
+#login_error_message,
+#user_login_error_message {
+    display: none;
+    margin: auto;
+    color: #ae101c;
+}

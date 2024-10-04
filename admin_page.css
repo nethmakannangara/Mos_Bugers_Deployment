@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+
+.main_display_box {
+    border-radius: 0.5rem;
+    background-color: #D9D9D9;
+}
+
+.option_display_box {
+    width: 50%;
+    max-height: 500px;
+    border-radius: 0.3em;
+    /* background-color: #575757; */
+}
+
+.button_area {
+    display: block;
+    background-color: #575757;
+    border-radius: 0.4rem;
+    height: 300px;
+    align-content: center;
+}
+
+.title_mos_bugers {
+    font-family: "Calligraffitti", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+}
+
+.lbl_admin_panel {
+    font-family: "Klee One", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 38px;
+}
+
+.hr-1 {
+    width: 80%;
+    margin: auto;
+    height: 5px;
+    color: #1b263b;
+}
+
+.image {
+    width: 40%;
+    align-content: center;
+    justify-content: center;
+}
+
+.btn_place_order,
+.btn_view_items,
+.btn_view_items,
+.btn_view_orders,
+.btn_add_users {
+    width:50%;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 19px;
+    padding: 1px 20px 1px 20px;
+    background: linear-gradient(90deg, #3B3636, #A19393 100%);
+    border: none;
+    margin: 2%;
+    border-radius: 0.7rem;
+    color: #E5E5E5;
+    transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1)
+        /* color : #E5E5E5; */
+}
+
+.btn_place_order:hover,
+.btn_view_items:hover,
+.btn_view_items:hover,
+.btn_view_orders:hover,
+.btn_add_users:hover {
+    background: linear-gradient(90deg, #7a7272, #3B3636 100%);
+    font-size: 21px;
+}
+
+.btn_back{
+    width:20%;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 19px;
+    padding: 1px 20px 1px 20px;
+    background: #1e1b1b;
+    border: none;
+    margin: 2%;
+    border-radius: 0.4rem;
+    color: #E5E5E5;
+}

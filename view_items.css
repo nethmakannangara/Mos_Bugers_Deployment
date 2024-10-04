@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+
+.title_mos_bugers {
+    font-family: "Calligraffitti", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+}
+
+.title_view_items {
+    font-family: "Klee One", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 38px;
+}
+
+.item_button {
+    margin-bottom: 3px;
+    padding: 6px 12px 6px 12px;
+    background-color: rgb(55, 89, 228);
+    border-radius: 0.2rem;
+    cursor: pointer;
+    color: #E5E5E5;
+}
+
+.hr-1 {
+    width: 80%;
+    margin: auto;
+    color: #1b263b;
+}
+
+.item_table_box {
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    margin: auto;
+    width: 70%;
+    background-color: #575757;
+    justify-items: center;
+    border-radius: 0.7rem;
+    max-height: 400px;
+    overflow: scroll;
+}
+
+.edit_dialog_box {
+    display: none;
+    width: 80%;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    margin: auto;
+    border-radius: 0.5rem;
+    z-index: 1;
+    background-color: #2c2c2c;
+}
+
+#itemID,
+#item_type {
+    border: none;
+    outline: none;
+}
+
+#item_table_header{
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 19px;
+    padding: 5px;
+    color: #E5E5E5;
+}
+
+#item_table_details,
+#item_table_details_col4{
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 12px;
+    color: #E5E5E5;
+}
+
+#item_table_details_col4{
+    color: #80ed99;
+}
+
+.lbl_edit_order_details,
+.edit_dialog_box label {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #E5E5E5;
+}
+
+.lbl_edit_order_details {
+    font-size: 30px;
+}
+
+.edit_dialog_box label {
+    font-size: 17px;
+}
+
+.input_area {
+    width: 40%;
+    margin: auto;
+}
+
+.input_area label {
+    margin-left: 5%;
+}
+
+.input_area input {
+    width: 65%;
+    margin-left: 15%;
+    border: none;
+    outline: none;
+    margin-bottom: 5px;
+}
+
+.message_box,
+.message_box_2{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 10%;
+    margin: auto;
+    align-content: center;
+    height: 100px;
+    border-radius: 0.8rem;
+    background-color:hsla(0, 0%, 19%, 0.9);
+    z-index: 1;
+}
+
+.message-body p,
+.message_box_2 p{
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #E5E5E5;
+    font-size: 25px;
+}

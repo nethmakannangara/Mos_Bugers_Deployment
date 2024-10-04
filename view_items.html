@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="view_items.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row text-center">
+            <label class="title_mos_bugers" for="">Mos Bugers</label>
+        </div>
+    </div>
+
+    <div class="container mb-4">
+        <div class="row">
+            <div style="background-color: #D9D9D9 ; border-radius: 0.5rem;">
+
+                <div class="sub_title text-center mb-2">
+                    <label class="title_view_items" for="">View Items</label>
+                </div>
+
+                <hr class="hr-1 mb-3">
+
+
+                <div class="mt-2 mb-3 text-center ">
+                    <div>
+                        <label class="item_button" for="" onclick="loadTable(1)">Burgers</label>
+                        <label class="item_button" for="" onclick="loadTable(2)">Submerines</label>
+                        <label class="item_button" for="" onclick="loadTable(3)">Fries</label>
+                        <label class="item_button" for="" onclick="loadTable(4)">Pasta</label>
+                        <label class="item_button" for="" onclick="loadTable(5)">Chicken</label>
+                        <label class="item_button" for="" onclick="loadTable(6)">Beverages</label>
+                    </div>
+                </div>
+
+                <div class=" text-center mt-2">
+                    <div class="table_area">
+                        <div class="item_table_box mt-2 mb-2">
+                            <table id="item_table">
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-3 mb-4 d-flex" style="justify-content: flex-end;">
+                    <button class="btn btn-primary" onclick="editItemDetails()">Edit Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container col-12">
+        <div class="">
+            <div id="edit_dialog_box" class="edit_dialog_box">
+                <div class="text-center">
+                    <label class="lbl_edit_order_details" for="lbl_edit_order_details">Edit Order Details</label>
+                </div>
+                <div class="mt-3 text-center">
+                    <label for="">Item ID : </label>
+                    <input id="itemID" type="text">
+                    <input id="item_type" type="type" placeholder="Item type(eg: Bugers)" list="itemType">
+                    <datalist id="itemType">
+                        <option value="Burgers">Burgers</option>
+                        <option value="Submarines">Submarines</option>
+                        <option value="Fries">Fries</option>
+                        <option value="Pasta">Pasta</option>
+                        <option value="Chicken">Chicken</option>
+                        <option value="Beverages">Beverages</option>
+                    </datalist>
+                    <button class="btn btn-primary" onclick="searchItem()">Search</button>
+                </div>
+                <div class="input_area mt-3 mb-3">
+                    <label for="">Item Description :</label><br>
+                    <input id="txt_item_description" type="text"><br>
+                    <label for="txt_item_Price">Price :</label><br>
+                    <input id="txt_item_Price" type="text"><br>
+                    <label for="txt_item_discount">Discount :</label><br>
+                    <input id="txt_item_discount" type="text">
+                </div>
+                <div class="mt-3 mb-4 d-flex" style="justify-content: space-between; width: 25%; margin: auto;">
+                    <button class="btn btn-primary" id="btnDelate">Delete</button>
+                    <button id="btnAdd" class="btn btn-primary" onclick="addItems()">Add Item</button>
+                    <button class="btn btn-primary" onclick="closeWindow()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container"></div>
+        <div class="row">
+            <div class="message_box col-10" id="message_box">
+                <div class="message-body text-center">
+                    <p>This Item not added..</p>
+                    <button class="btn btn-primary" id="btnAdd" onclick="addBTN()">ADD</button>
+                    <button class="btn btn-primary" id="btnCancel" onclick="cancelBTN()">Cancel</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="view_items.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

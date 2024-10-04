@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+
+
+.title_mos_bugers {
+    font-family: "Calligraffitti", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+}
+
+.main_input_box {
+    width: 50%;
+}
+
+.sub_title {
+    width: 100%;
+}
+
+.title_place_order {
+    font-family: "Klee One", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 38px;
+}
+
+.order_box,
+.customer_details_box {
+    display: inline;
+    width: 50%;
+    /* background-color: blueviolet; */
+}
+
+#telephone-no{
+    outline: none;
+    border: none;
+    border-bottom: 1px black solid;
+    background: transparent;
+}
+
+.order_box label,
+.customer_details_box label {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    /* color: #E5E5E5; */
+    margin-left: 10px;
+    font-size: 17px;
+}
+
+.hr-1{
+    width: 80%;
+    margin: auto;
+    height: 5px;
+    color: #1b263b;
+}
+
+#invalid_quantity{
+    display: none;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #c1121f;
+    font-size: 17px;
+    margin-left: 4%;
+    margin-bottom: 3px;
+}
+
+.order_box input,
+.customer_details_box input {
+    border: none;
+    outline: none;
+    border-bottom: 1px black solid;
+    max-width: 100%;
+    margin-left: 10%;
+    background: transparent;
+    margin-bottom: 5px;
+    height: 20px;
+}
+
+.image{
+    width: 50%;
+    z-index: 1;
+}
+
+.image img{
+    height: fit-content;
+    z-index: -1;
+}
+
+.message_box,
+.message_box_2{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 10%;
+    margin: auto;
+    align-content: center;
+    height: 100px;
+    border-radius: 0.8rem;
+    background-color:hsla(0, 0%, 19%, 0.9);
+    z-index: 1;
+}
+
+.message-body p,
+.message_box_2 p{
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #E5E5E5;
+    font-size: 25px;
+}
+.order_items_list{
+    display: none;
+    position: absolute;
+    width: 40%;
+}
+
+.order_list{
+    z-index: 1;
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    background-color: hsla(0, 0%, 19%, 0.9);
+   
+}
+
+.order_list_details{
+    max-height: 350px;
+    overflow: scroll;
+}
+
+.title_order_list{
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #E5E5E5;
+    font-size: 25px;
+}
+
+#items{
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #E5E5E5;
+    font-size: 16px;
+    padding: 4px;
+}
+
+.amount_area{
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 0.5rem;
+    background-color: #D9D9D9;
+}
+
+.amount_details{
+    width: 50%;
+}
+
+.amount_details{
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    /* color: #E5E5E5; */
+    font-size: 25px;
+}
