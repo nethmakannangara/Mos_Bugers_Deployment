@@ -305,7 +305,14 @@ newOrder = () => {
     document.getElementById("telephone-no").value = null;
 
     document.getElementById("amount").innerHTML = total + ".00";
+    document.getElementById("items").innerHTML = null;
+
+    document.getElementById("amount").style.color = "#c1121f";
+    document.getElementById("lbl_amount").style.color = "#000";
+    document.getElementById("amount").style.color = "#000";
     clearTxtFiled();
+
+    orderID++;
 }
 
 //------------FUNCTION CALL-----------//
